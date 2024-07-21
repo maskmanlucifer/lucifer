@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/maskman/static/css/main.ef66e5fb.css",
+    "main.js": "/maskman/static/js/main.748a980e.js",
+    "static/media/hero-image.jpg": "/maskman/static/media/hero-image.672373f5563a8824c07a.jpg",
+    "index.html": "/maskman/index.html",
+    "main.ef66e5fb.css.map": "/maskman/static/css/main.ef66e5fb.css.map",
+    "main.748a980e.js.map": "/maskman/static/js/main.748a980e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef66e5fb.css",
+    "static/js/main.748a980e.js"
+  ]
+}
