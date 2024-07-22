@@ -3,9 +3,9 @@ const Social = ({ socials, updatedOn }) => {
   return (
     <div className="social">
       <ul>
-        {socials.map((contactItem) => {
+        {socials.map((contactItem, index) => {
           return (
-            <li>
+            <li key={'social'+index}>
               <a href={contactItem.url} target="_blank" rel="noreferrer"><span style={{ borderBottomColor: contactItem.color }}>{contactItem.platform}</span></a>
             </li>
           )

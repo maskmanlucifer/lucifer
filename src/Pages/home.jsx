@@ -8,7 +8,7 @@ import Social from '../Components/social';
 const Home = () => {
   return (
     <div className="main">
-      <div class="container">
+      <div className="container">
         <Header general={data.general} />
         <Now now={data.now} />
         <Projects projects={data.projects} />

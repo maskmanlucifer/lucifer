@@ -7,9 +7,9 @@ const Now = ({ now }) => {
       <p className="section-title">What I'm Doing Now</p>
       <div className="list-wrapper">
       <ul className="now-list">
-        {now.map((item) => {
+        {now.map((item, index) => {
           return (
-            <li>{getNowTextFromJson(item)}</li>
+            <li key={'list'+index}>{getNowTextFromJson(item)}</li>
           )
         })}
       </ul>
