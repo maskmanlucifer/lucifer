@@ -14,15 +14,8 @@
 }
 
 :root {
-  --background-color: #fff;
-  --color: #1A1B20;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #000;
-    --color: #eee;
-  }
+  --background-color: #000;
+  --color: #eee;
 }
 
 
@@ -59,7 +52,7 @@ a {
   background-color: #151515;
   margin-top: 40px;
   margin-bottom: 40px;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 .header img {
