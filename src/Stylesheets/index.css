@@ -80,6 +80,9 @@ a {
   font-size: 16px;
   margin-top: 32px;
   color: var(--text-secondary);
+  background-color: var(--black);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .section-title {
@@ -90,8 +93,14 @@ a {
 .now .now-list {
   font-size: 16px;
   color: var(--text-secondary);
-  margin-top: 8px;
   margin-left: 16px;
+}
+
+.list-wrapper {
+  background-color: var(--black);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 8px;
 }
 
 .now .now-item-url {

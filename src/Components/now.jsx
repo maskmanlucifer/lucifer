@@ -5,6 +5,7 @@ const Now = ({ now }) => {
   return (
     <div className="now">
       <p className="section-title">What I'm Doing Now</p>
+      <div className="list-wrapper">
       <ul className="now-list">
         {now.map((item) => {
           return (
@@ -12,6 +13,7 @@ const Now = ({ now }) => {
           )
         })}
       </ul>
+      </div>
     </div>
   );
 };
