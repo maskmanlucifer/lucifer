@@ -32,7 +32,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   text-size-adjust: none;
   position: relative;
-  letter-spacing: 0.0625em;
+  letter-spacing: 1px;
 }
 
 .main {
