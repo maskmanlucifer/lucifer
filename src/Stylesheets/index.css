@@ -7,16 +7,16 @@
   padding: 0;
   box-sizing: border-box;
   --white: #fff;
-  --black: #1A1B20;
+  --black: #0b0e10;
   --blue: #5040FF;
   --red: #FB6514;
   --green: rgba(0, 187, 131, 0.7);
   --yellow: #F8C231;
-  --text-secondary: rgba(170, 170, 170, 0.9);
+  --text-secondary: #AAAAAA;
 }
 
 :root {
-  --background-color: #000;
+  --background-color: #1E1E1E;
   --color: #eee;
 }
 
@@ -26,7 +26,7 @@ body {
   font-size: min(6vw, 24px);
   line-height: 1.6;
   font-weight: 500;
-  background-color: var(--background-color);
+  background-color: #000;
   color: var(--color);
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
@@ -47,21 +47,17 @@ a {
 
 .container {
   position: relative;
-  max-width: 500px;
-  padding: 24px;
+  max-width: 370px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #151515;
   margin-top: 40px;
   margin-bottom: 40px;
-  border-radius: 12px;
 }
 
 .header img {
-  width: 100%;
-  height: 600px;
-  border-radius: 8px;
+  width: 400px;
+  height: 500px;
   margin-bottom: 1rem;
 }
 
@@ -71,7 +67,6 @@ a {
   font-family: "Poiret One", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-style: italic;
   letter-spacing: 2px;
 }
 
@@ -90,7 +85,6 @@ a {
   color: var(--text-secondary);
   background-color: var(--black);
   padding: 16px;
-  border-radius: 8px;
 }
 
 .section-title {
@@ -107,7 +101,6 @@ a {
 .list-wrapper {
   background-color: var(--black);
   padding: 16px;
-  border-radius: 8px;
   margin-top: 8px;
 }
 
@@ -143,7 +136,11 @@ a {
 .project {
   background-color: var(--black);
   padding: 16px;
-  border-radius: 8px;
+}
+
+.project:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .projects-list .info {
@@ -182,12 +179,7 @@ a {
   margin-top: 100px;
   font-size: 15px;
   display: flex;
-  justify-content: space-between;
-}
-
-.social .updated-on {
-  color: var(--text-secondary);
-  font-size: 14px;
+  justify-content: center;
 }
 
 .social ul {
@@ -205,7 +197,6 @@ a {
 
 .social li a span {
   border-bottom: 1px solid #fff;
-  padding-bottom: 3px;
 }
 
 .social li a:hover {

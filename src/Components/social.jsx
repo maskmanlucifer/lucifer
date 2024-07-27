@@ -11,7 +11,6 @@ const Social = ({ socials, updatedOn }) => {
           )
         })}
       </ul>
-      <span className="updated-on">Updated @ {updatedOn}</span>
     </div>
   );
 }

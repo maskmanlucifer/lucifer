@@ -4,7 +4,7 @@ export const data = {
       "displayOccupation": "Frontend Developer",
       "displayLocation": "India",
       "displayEmail": "maskmanaman@gmail.com",
-      "about": "I'm constantly exploring the intersection of design and code, striving to craft innovative solutions that address real-world challenges. I find inspiration in everything from music and nature to the vast possibilities of the internet. My process is fueled by a love of learning and a dedication to continuous improvement."
+      "about": "I'm constantly exploring the intersection of design and code, striving to craft innovative solutions that address real-world challenges. I find inspiration in everything from music and nature to the vast possibilities of the internet."
     },
     "socials" : [
         {
