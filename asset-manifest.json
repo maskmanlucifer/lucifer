@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lucifer/static/css/main.a687a8d6.css",
-    "main.js": "/lucifer/static/js/main.5fc9513e.js",
-    "static/media/hero-image.jpg": "/lucifer/static/media/hero-image.672373f5563a8824c07a.jpg",
+    "main.css": "/lucifer/static/css/main.634d745a.css",
+    "main.js": "/lucifer/static/js/main.01f5a08d.js",
+    "static/media/PXL_20230910_110903024.jpg": "/lucifer/static/media/PXL_20230910_110903024.d16c1b13a5b40e28205f.jpg",
     "index.html": "/lucifer/index.html",
-    "main.a687a8d6.css.map": "/lucifer/static/css/main.a687a8d6.css.map",
-    "main.5fc9513e.js.map": "/lucifer/static/js/main.5fc9513e.js.map"
+    "main.634d745a.css.map": "/lucifer/static/css/main.634d745a.css.map",
+    "main.01f5a08d.js.map": "/lucifer/static/js/main.01f5a08d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a687a8d6.css",
-    "static/js/main.5fc9513e.js"
+    "static/css/main.634d745a.css",
+    "static/js/main.01f5a08d.js"
   ]
 }
