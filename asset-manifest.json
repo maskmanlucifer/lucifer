@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lucifer/static/css/main.61e95cba.css",
+    "main.css": "/lucifer/static/css/main.db353889.css",
     "main.js": "/lucifer/static/js/main.01f5a08d.js",
     "static/media/PXL_20230910_110903024.jpg": "/lucifer/static/media/PXL_20230910_110903024.d16c1b13a5b40e28205f.jpg",
     "index.html": "/lucifer/index.html",
-    "main.61e95cba.css.map": "/lucifer/static/css/main.61e95cba.css.map",
+    "main.db353889.css.map": "/lucifer/static/css/main.db353889.css.map",
     "main.01f5a08d.js.map": "/lucifer/static/js/main.01f5a08d.js.map"
   },
   "entrypoints": [
-    "static/css/main.61e95cba.css",
+    "static/css/main.db353889.css",
     "static/js/main.01f5a08d.js"
   ]
 }
