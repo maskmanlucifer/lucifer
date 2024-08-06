@@ -176,10 +176,12 @@ a {
 }
 
 .social {
-  margin-top: 100px;
+  margin-top: 80px;
   font-size: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .social ul {
@@ -187,6 +189,7 @@ a {
   gap: 12px;
   flex-wrap: wrap;
   list-style-type: none;
+  margin-top: 16px;
 }
 
 .social li a {
@@ -206,4 +209,92 @@ a {
 
 .divider {
 text-align: center;
+}
+
+.books-section {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+
+  .books-list {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+
+    .book {
+      background-color: var(--black);
+      padding: 12px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all ease 300ms;
+      gap: 8px;
+      border-radius: 6px;
+      position: relative;
+      height: 330px;
+
+      .book-status {
+        color: var(--white);
+        font-size: 12px;
+        color: var(--text-secondary);
+        font-weight: 600;
+        position: absolute;
+        top: 12px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--background-color);
+
+        img {
+          transform: translateY(30px);
+          transition: transform ease 300ms;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 235px;
+        border-radius: 4px;
+        z-index: 3;
+        transform: translateY(0px);
+        transition: transform ease 300ms;
+        cursor: pointer;
+      }
+
+      .book-title {
+        font-size: 14px;
+      }
+
+      .book-author {
+        font-size: 12px;
+        color: var(--text-secondary);
+      }
+    }
+  }
+
+  .books-carousal {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+    span {
+      height: 24px;
+      width: 24px;
+    }
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    span:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
 }

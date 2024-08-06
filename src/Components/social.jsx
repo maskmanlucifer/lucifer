@@ -2,7 +2,8 @@ const Social = ({ socials, updatedOn }) => {
   if (!socials || socials.length === 0) return null;
   return (
     <div className="social">
-      <ul>
+      <p className="section-emoji">🪴🌻🏕</p>
+      <ul className="social-list">
         {socials.map((contactItem, index) => {
           return (
             <li key={'social'+index}>

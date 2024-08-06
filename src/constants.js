@@ -25,12 +25,12 @@ export const data = {
     ],
     "now" : [
         {
-           text: "Actively learning Figma."
+           text: "Actively learning Figma.",
+           url: "https://www.figma.com/",
+           urlText: "Figma"
         },
         {
-            text: "Reading",
-            url: "https://www.goodreads.com/book/show/23692271-sapiens",
-            urlText: "Sapiens"
+            text: "Trying to consume less content and reflect more."
         }
     ],
     projects: [
@@ -39,6 +39,44 @@ export const data = {
             description: "Mosaix is a photomosaic generator, designed to create a larger image from many smaller ones, arranging them to mimic the appearance of the original picture.",
             projectUrl: "https://www.figma.com/design/8l7OdrvpfGstCc3tDo2AJ4/Mosaix",
             status: "Building",
+        }
+    ],
+    books: [
+        {
+            title: "Sapiens",
+            author: "Yuval Noah Harari",
+            status: "Reading",
+            img: require('../src/Images/books/6.jpg')
+        },
+        {
+            title: "Normal People",
+            author: "Sally Rooney",
+            status: "Read",
+            img: require('../src/Images/books/2.jpg')
+        },
+        {
+            title: "The shortest history of India",
+            author: "John Zubrzycki",
+            status: "Read",
+            img: require('../src/Images/books/4.jpg')
+        },
+        {
+            title: "If cats disappeared from the world",
+            author: "Genki Kawamura",
+            status: "Read",
+            img: require('../src/Images/books/1.jpg')
+        },
+        {
+            title: "A Man Called Ove",
+            author: "Fredrik Backman",
+            status: "Read",
+            img: require('../src/Images/books/3.jpg')
+        },
+        {
+            title: "Make time",
+            author: "Jake Knapp",
+            status: "Read",
+            img: require('../src/Images/books/5.jpg')
         }
     ],
     updatedOn: "22/07/2024"
