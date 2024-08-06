@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/lucifer/static/css/main.aea82a7a.css",
-    "main.js": "/lucifer/static/js/main.01f5a08d.js",
-    "static/media/PXL_20230910_110903024.jpg": "/lucifer/static/media/PXL_20230910_110903024.d16c1b13a5b40e28205f.jpg",
+    "main.css": "/lucifer/static/css/main.25882278.css",
+    "main.js": "/lucifer/static/js/main.03c654c3.js",
+    "static/media/hero-image.jpg": "/lucifer/static/media/hero-image.d16c1b13a5b40e28205f.jpg",
+    "static/media/2.jpg": "/lucifer/static/media/2.e445e3a9f4c80a3966a2.jpg",
+    "static/media/6.jpg": "/lucifer/static/media/6.fd0d5ab57f89d1ef42bd.jpg",
+    "static/media/4.jpg": "/lucifer/static/media/4.bb3df1573f267a212592.jpg",
+    "static/media/3.jpg": "/lucifer/static/media/3.73e97625da535bc52f15.jpg",
+    "static/media/5.jpg": "/lucifer/static/media/5.900c168a35b80bc44aab.jpg",
+    "static/media/1.jpg": "/lucifer/static/media/1.69807c20a435d8470734.jpg",
     "index.html": "/lucifer/index.html",
-    "main.aea82a7a.css.map": "/lucifer/static/css/main.aea82a7a.css.map",
-    "main.01f5a08d.js.map": "/lucifer/static/js/main.01f5a08d.js.map"
+    "main.25882278.css.map": "/lucifer/static/css/main.25882278.css.map",
+    "main.03c654c3.js.map": "/lucifer/static/js/main.03c654c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.aea82a7a.css",
-    "static/js/main.01f5a08d.js"
+    "static/css/main.25882278.css",
+    "static/js/main.03c654c3.js"
   ]
 }
