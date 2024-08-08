@@ -140,7 +140,8 @@ a {
 
 .project:hover {
   cursor: pointer;
-  opacity: 0.8;
+  background-color: var(--background-color);
+  transition: background-color ease 300ms;
 }
 
 .projects-list .info {

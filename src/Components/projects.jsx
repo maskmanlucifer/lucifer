@@ -14,7 +14,6 @@ const Projects = ({ projects }) => {
             </div>
           )
         })}
-
       </div>
     </div>
   );

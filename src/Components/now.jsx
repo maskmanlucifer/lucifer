@@ -4,7 +4,7 @@ const Now = ({ now }) => {
   if (!now || now.length === 0) return null;
   return (
     <div className="now">
-      <p className="section-title">What I'm Doing Now</p>
+      <p className="section-title">Now</p>
       <div className="list-wrapper">
       <ul className="now-list">
         {now.map((item, index) => {

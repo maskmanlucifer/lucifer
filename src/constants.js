@@ -1,12 +1,12 @@
 export const data = {
     "general": {
-      "displayName": "Aman Kumar Singh",
-      "displayOccupation": "Frontend Developer",
-      "displayLocation": "India",
-      "displayEmail": "maskmanaman@gmail.com",
-      "about": "I'm constantly exploring the intersection of design and code, striving to craft innovative solutions that address real-world challenges. I find inspiration in everything from music and nature to the vast possibilities of the internet."
+        "displayName": "Aman Kumar Singh",
+        "displayOccupation": "Frontend Developer",
+        "displayLocation": "India",
+        "displayEmail": "maskmanaman@gmail.com",
+        "about": "I'm constantly exploring the intersection of design and code, striving to craft innovative solutions that address real-world challenges. I find inspiration in everything from music and nature to the vast possibilities of the internet."
     },
-    "socials" : [
+    "socials": [
         {
             "platform": "LinkedIn",
             "url": "https://www.linkedin.com/in/maskmanlucifer/",
@@ -23,14 +23,17 @@ export const data = {
             "color": "#F8C231"
         }
     ],
-    "now" : [
+    "now": [
         {
-           text: "Actively learning Figma.",
-           url: "https://www.figma.com/",
-           urlText: "Figma"
+            text: "Trying to consume less content."
         },
         {
-            text: "Trying to consume less content and reflect more."
+            text: "Actively learning",
+            url: "https://www.figma.com/",
+            urlText: "Figma"
+        },
+        {
+            text: "Searching new and useful ideas to work on."
         }
     ],
     projects: [
