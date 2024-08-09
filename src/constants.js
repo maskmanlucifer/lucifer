@@ -39,9 +39,9 @@ export const data = {
     projects: [
         {
             title: "Mosaix",
-            description: "Mosaix is a photomosaic generator, designed to create a larger image from many smaller ones, arranging them to mimic the appearance of the original picture.",
+            description: "A photomosaic generator, designed to create a larger image from many smaller ones, arranging them to mimic the appearance of the original picture.",
             projectUrl: "https://www.figma.com/design/8l7OdrvpfGstCc3tDo2AJ4/Mosaix",
-            status: "Building",
+            status: "Archived",
         }
     ],
     books: [

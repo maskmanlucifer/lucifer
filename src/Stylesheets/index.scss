@@ -13,6 +13,7 @@
   --green: rgba(0, 187, 131, 0.7);
   --yellow: #F8C231;
   --text-secondary: #AAAAAA;
+  --attention: #c69026
 }
 
 :root {
@@ -123,7 +124,6 @@ a {
 
 .projects-list .status {
   font-size: 14px;
-  background-color: rgba(0, 187, 131, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,6 +131,23 @@ a {
   color: var(--white);
   height: 24px;
   padding: 8px;
+
+  &.paused {
+    background-color: var(--yellow);
+  }
+
+  &.building {
+    background-color: var(--blue);
+  }
+
+  &.completed {
+    background-color: var(--green);
+  }
+
+  &.archived {
+    border: 1px solid var(--attention);
+    color: var(--attention);
+  }
 }
 
 .project {

@@ -8,7 +8,7 @@ const Projects = ({ projects }) => {
           return (
             <div className="project" key={title} onClick={() => window.open(projectUrl, '_blank')}>
               <div className="info">
-                <div className="header"><a href={projectUrl} target="_blank" rel="noreferrer"><p className="title">{title}</p></a><div className={`status ${status}`}>{status}</div></div>
+                <div className="header"><a href={projectUrl} target="_blank" rel="noreferrer"><p className="title">{title}</p></a><div className={`status ${status.toLowerCase()}`}>{status}</div></div>
                 <p className="description">{description}</p>
               </div>
             </div>
