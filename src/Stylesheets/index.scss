@@ -137,7 +137,8 @@ a {
   }
 
   &.building {
-    background-color: var(--blue);
+    border: 1px solid var(--green);
+    color: var(--green);
   }
 
   &.completed {
@@ -153,6 +154,11 @@ a {
 .project {
   background-color: var(--black);
   padding: 16px;
+  margin-top: 16px;
+}
+
+.project:first-of-type {
+  margin-top: 0;
 }
 
 .project:hover {

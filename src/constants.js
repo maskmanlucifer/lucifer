@@ -38,6 +38,12 @@ export const data = {
     ],
     projects: [
         {
+            title: "Intent",
+            description: "A personal task management tool that helps you focus on what's important.",
+            projectUrl: "https://maskmanlucifer.github.io/Intent/",
+            status: "Building",
+        },
+        {
             title: "Mosaix",
             description: "A photomosaic generator, designed to create a larger image from many smaller ones, arranging them to mimic the appearance of the original picture.",
             projectUrl: "https://www.figma.com/design/8l7OdrvpfGstCc3tDo2AJ4/Mosaix",
