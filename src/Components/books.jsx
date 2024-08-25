@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getCarousalLeftArrow, getCarousalRightArrow } from "./helpers";
 
 const Books = ({books}) => {
@@ -38,6 +38,17 @@ const Books = ({books}) => {
             }
         }
     }
+
+    const preloadImage = (src) => {
+        const img = new Image();
+        img.src = src;
+    };
+
+    useEffect(() => {
+        currentBooks.forEach(book => {
+            preloadImage(book.img);
+        });
+    }, []);
 
     return (
         <div className="books-section">

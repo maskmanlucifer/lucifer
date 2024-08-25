@@ -21,6 +21,11 @@ export const data = {
             "platform": "ReadCV",
             "url": "https://read.cv/maskman_lucifer",
             "color": "#F8C231"
+        },
+        {
+            "platform": "Send Email",
+            "url": "mailto:maskmanaman@gmail.com",
+            "color": "#AAAAAA"
         }
     ],
     "now": [
@@ -28,12 +33,10 @@ export const data = {
             text: "Trying to consume less content."
         },
         {
-            text: "Actively learning",
-            url: "https://www.figma.com/",
-            urlText: "Figma"
+            text: "Learning about design systems.",
         },
         {
-            text: "Searching new and useful ideas to work on."
+            text: "Searching useful ideas to work on."
         }
     ],
     projects: [
@@ -45,7 +48,7 @@ export const data = {
         },
         {
             title: "Mosaix",
-            description: "A photomosaic generator, designed to create a larger image from many smaller ones, arranging them to mimic the appearance of the original picture.",
+            description: "A photomosaic generator, designed to create a larger image from many smaller ones.",
             projectUrl: "https://www.figma.com/design/8l7OdrvpfGstCc3tDo2AJ4/Mosaix",
             status: "Archived",
         }
