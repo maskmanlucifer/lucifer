@@ -1,1 +1,1 @@
-[Link to Website](https://maskmanlucifer.github.io/lucifer/)
+[maskmanlucifer](https://maskmanlucifer.github.io/lucifer/)
