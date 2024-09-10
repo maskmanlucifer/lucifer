@@ -43,7 +43,7 @@ export const data = {
         {
             title: "Intent",
             description: "A personal task management tool that helps you focus on what's important.",
-            projectUrl: "https://maskmanlucifer.github.io/Intent/",
+            projectUrl: "https://maskmanlucifer.github.io/intent-site/",
             status: "Building",
         },
         {
