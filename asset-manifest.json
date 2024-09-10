@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/lucifer/static/css/main.2d97c278.css",
-    "main.js": "/lucifer/static/js/main.11d1e5ca.js",
+    "main.js": "/lucifer/static/js/main.cc583b22.js",
     "static/media/hero-image.jpg": "/lucifer/static/media/hero-image.d16c1b13a5b40e28205f.jpg",
     "static/media/2.jpg": "/lucifer/static/media/2.c1b7c5e7e11e592f46d3.jpg",
+    "static/media/7.jpg": "/lucifer/static/media/7.e8bd3eff54dd68f9aef7.jpg",
     "static/media/6.jpg": "/lucifer/static/media/6.5391b4afbff737c4b491.jpg",
+    "static/media/8.jpg": "/lucifer/static/media/8.192d053a132e65f05eed.jpg",
     "static/media/3.jpg": "/lucifer/static/media/3.36727ec1fc28173fdb83.jpg",
     "static/media/4.jpg": "/lucifer/static/media/4.d3bee853558116fceb88.jpg",
     "static/media/5.jpg": "/lucifer/static/media/5.291287c38b2519ceedfc.jpg",
     "static/media/1.jpg": "/lucifer/static/media/1.686623df6d7bcf319cd3.jpg",
     "index.html": "/lucifer/index.html",
     "main.2d97c278.css.map": "/lucifer/static/css/main.2d97c278.css.map",
-    "main.11d1e5ca.js.map": "/lucifer/static/js/main.11d1e5ca.js.map"
+    "main.cc583b22.js.map": "/lucifer/static/js/main.cc583b22.js.map"
   },
   "entrypoints": [
     "static/css/main.2d97c278.css",
-    "static/js/main.11d1e5ca.js"
+    "static/js/main.cc583b22.js"
   ]
 }
