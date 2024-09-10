@@ -55,9 +55,21 @@ export const data = {
     ],
     books: [
         {
+            title: "Man's Search for Meaning",
+            author: "Viktor Frankl",
+            status: "Reading",
+            img: require('../src/Images/books/7.jpg')
+        },
+        {
+            title: "The little book of Alpaca Philosophy",
+            author: "Jennifer McCartney",
+            status: "Read",
+            img: require('../src/Images/books/8.jpg')
+        },
+        {
             title: "Sapiens",
             author: "Yuval Noah Harari",
-            status: "Reading",
+            status: "Read",
             img: require('../src/Images/books/6.jpg')
         },
         {
