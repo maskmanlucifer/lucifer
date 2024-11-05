@@ -280,6 +280,8 @@ a {
 
         svg {
           fill: #373cf1;
+          transform: rotate(-15deg);
+          transition: all ease 300ms;
         }
       }
     }
