@@ -1,32 +1,41 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { getSaturnIcon } from "./helpers";
 const HeroImage = require("../Images/hero-image.jpg");
 
 const Header = ({ general }) => {
+
+  const targetScaleRef = useRef(10);
+  const currentScaleRef = useRef(10);
+
   useEffect(() => {
     const svg = document.getElementById("distortionSVG");
       const displacementMap = document.getElementById("displacementMap");
 
-      let targetScale = 10;
-      let currentScale = 10;
+      
+      let animationFrameId;
 
       function animateScale() {
-        if (Math.abs(currentScale - targetScale) < 0.1) return;
-        currentScale += (targetScale - currentScale) * 0.1; // Smooth transition factor
-        displacementMap.setAttribute("scale", currentScale.toFixed(1));
-        requestAnimationFrame(animateScale);
+        if (Math.abs(currentScaleRef.current - targetScaleRef.current) < 0.1) return;
+        currentScaleRef.current += (targetScaleRef.current - currentScaleRef.current) * 0.1; // Smooth transition factor
+        displacementMap.setAttribute("scale", currentScaleRef.current.toFixed(1));
+        animationFrameId = requestAnimationFrame(animateScale);
       }
 
       svg.addEventListener("mouseover", () => {
-        targetScale = 60; // Set target scale on hover
+        targetScaleRef.current = 60; // Set target scale on hover
         animateScale();
       });
 
       svg.addEventListener("mouseout", () => {
-        targetScale = 10; // Reset target scale on mouse out
+        targetScaleRef.current = 10; // Reset target scale on mouse out
         animateScale();
       });
+
+      return () => {
+        cancelAnimationFrame(animationFrameId);
+      };
   }, [])
+
   return (
     <div className="header">
       <img src={HeroImage} alt="hero-image" />
