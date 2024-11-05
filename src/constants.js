@@ -55,9 +55,15 @@ export const data = {
     ],
     books: [
         {
-            title: "Man's Search for Meaning",
-            author: "Viktor Frankl",
+            title: "The myth of Sisyphus",
+            author: "Albert Camus",
             status: "Reading",
+            img: require('../src/Images/books/9.jpg')
+        },
+        {
+            title: "Gaban",
+            author: "Munsi Premchand",
+            status: "Read",
             img: require('../src/Images/books/7.jpg')
         },
         {
