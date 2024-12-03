@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/lucifer/static/css/main.bba20196.css",
-    "main.js": "/lucifer/static/js/main.6a2e8fb4.js",
+    "main.css": "/lucifer/static/css/main.d2dd4d47.css",
+    "main.js": "/lucifer/static/js/main.3bb886d6.js",
     "static/media/hero-image.jpg": "/lucifer/static/media/hero-image.287c8e0666f46bfc50bf.jpg",
     "static/media/2.jpg": "/lucifer/static/media/2.c1b7c5e7e11e592f46d3.jpg",
     "static/media/6.jpg": "/lucifer/static/media/6.5391b4afbff737c4b491.jpg",
     "static/media/8.jpg": "/lucifer/static/media/8.192d053a132e65f05eed.jpg",
     "static/media/7.jpg": "/lucifer/static/media/7.8714348d7c7ccca82d6f.jpg",
+    "static/media/10.jpg": "/lucifer/static/media/10.144766ec2ad57d65eb8f.jpg",
     "static/media/3.jpg": "/lucifer/static/media/3.36727ec1fc28173fdb83.jpg",
     "static/media/4.jpg": "/lucifer/static/media/4.d3bee853558116fceb88.jpg",
     "static/media/9.jpg": "/lucifer/static/media/9.f9e03c29628cd7bd4aeb.jpg",
@@ -15,13 +16,13 @@
     "static/media/readdotcv.svg": "/lucifer/static/media/readdotcv.aee8ad521d3fc2671c8235d5b3f764bc.svg",
     "static/media/github.svg": "/lucifer/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
     "index.html": "/lucifer/index.html",
-    "static/media/linkedin.svg": "/lucifer/static/media/linkedin.21497356676bc7604cc75603391fb6d3.svg",
+    "static/media/linkedin.svg": "/lucifer/static/media/linkedin.a13587b9644643e1ca31db6ae72f5789.svg",
     "static/media/gmail.svg": "/lucifer/static/media/gmail.f12319849e28413aaa94f1c11fd35eef.svg",
-    "main.bba20196.css.map": "/lucifer/static/css/main.bba20196.css.map",
-    "main.6a2e8fb4.js.map": "/lucifer/static/js/main.6a2e8fb4.js.map"
+    "main.d2dd4d47.css.map": "/lucifer/static/css/main.d2dd4d47.css.map",
+    "main.3bb886d6.js.map": "/lucifer/static/js/main.3bb886d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.bba20196.css",
-    "static/js/main.6a2e8fb4.js"
+    "static/css/main.d2dd4d47.css",
+    "static/js/main.3bb886d6.js"
   ]
 }
