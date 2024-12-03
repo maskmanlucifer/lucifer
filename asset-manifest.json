@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lucifer/static/css/main.d2dd4d47.css",
-    "main.js": "/lucifer/static/js/main.3bb886d6.js",
+    "main.js": "/lucifer/static/js/main.c6959856.js",
     "static/media/hero-image.jpg": "/lucifer/static/media/hero-image.287c8e0666f46bfc50bf.jpg",
     "static/media/2.jpg": "/lucifer/static/media/2.c1b7c5e7e11e592f46d3.jpg",
     "static/media/6.jpg": "/lucifer/static/media/6.5391b4afbff737c4b491.jpg",
@@ -19,10 +19,10 @@
     "static/media/linkedin.svg": "/lucifer/static/media/linkedin.a13587b9644643e1ca31db6ae72f5789.svg",
     "static/media/gmail.svg": "/lucifer/static/media/gmail.f12319849e28413aaa94f1c11fd35eef.svg",
     "main.d2dd4d47.css.map": "/lucifer/static/css/main.d2dd4d47.css.map",
-    "main.3bb886d6.js.map": "/lucifer/static/js/main.3bb886d6.js.map"
+    "main.c6959856.js.map": "/lucifer/static/js/main.c6959856.js.map"
   },
   "entrypoints": [
     "static/css/main.d2dd4d47.css",
-    "static/js/main.3bb886d6.js"
+    "static/js/main.c6959856.js"
   ]
 }
