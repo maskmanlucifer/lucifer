@@ -8,33 +8,42 @@ const Header = ({ general }) => {
   const currentScaleRef = useRef(10);
 
   useEffect(() => {
-    const svg = document.getElementById("distortionSVG");
+    function initAnimation() {
+      const svg = document.getElementById("distortionSVG");
       const displacementMap = document.getElementById("displacementMap");
 
-      
       let animationFrameId;
 
       function animateScale() {
-        if (Math.abs(currentScaleRef.current - targetScaleRef.current) < 0.1) return;
-        currentScaleRef.current += (targetScaleRef.current - currentScaleRef.current) * 0.1; // Smooth transition factor
+        currentScaleRef.current += (targetScaleRef.current - currentScaleRef.current) * 0.1;
         displacementMap.setAttribute("scale", currentScaleRef.current.toFixed(1));
         animationFrameId = requestAnimationFrame(animateScale);
       }
 
-      svg.addEventListener("mouseover", () => {
-        targetScaleRef.current = 60; // Set target scale on hover
-        animateScale();
-      });
+      function handleMouseOver() {
+        targetScaleRef.current = 60;
+      }
 
-      svg.addEventListener("mouseout", () => {
-        targetScaleRef.current = 10; // Reset target scale on mouse out
-        animateScale();
-      });
+      function handleMouseOut() {
+        targetScaleRef.current = 10;
+      }
+
+      svg.addEventListener("mouseover", handleMouseOver);
+      svg.addEventListener("mouseout", handleMouseOut);
+
+      animateScale();
 
       return () => {
         cancelAnimationFrame(animationFrameId);
+        svg.removeEventListener("mouseover", handleMouseOver);
+        svg.removeEventListener("mouseout", handleMouseOut);
       };
-  }, [])
+    }
+
+    initAnimation();
+    window.addEventListener("load", initAnimation);
+    return () => window.removeEventListener("load", initAnimation);
+  }, []);
 
   return (
     <div className="header">
@@ -73,7 +82,7 @@ const Header = ({ general }) => {
         fill="#fff"
         filter="url(#distortionFilter)"
       />
-    </svg>
+      </svg>
       </div>
       <p className="heading">{general.displayName}</p>
       <div className="sub-heading">

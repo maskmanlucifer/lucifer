@@ -1,7 +1,7 @@
-import {ReactComponent as GithubIcon} from './github.svg';
-import {ReactComponent as LinkedInIcon} from './linkedin.svg';
-import {ReactComponent as ReadCVIcon} from './readdotcv.svg';
-import {ReactComponent as EmailIcon} from './gmail.svg';
+import {ReactComponent as GithubIcon} from '../Images/icons/github.svg';
+import {ReactComponent as LinkedInIcon} from '../Images/icons/linkedin.svg';
+import {ReactComponent as ReadCVIcon} from '../Images/icons/readdotcv.svg';
+import {ReactComponent as EmailIcon} from '../Images/icons/gmail.svg';
 
 const getIcon = (platform) => {
   switch (platform) {

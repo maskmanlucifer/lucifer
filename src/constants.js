@@ -55,9 +55,15 @@ export const data = {
     ],
     books: [
         {
+            title: "Gunaahon Ka Devta",
+            author: "Dharamvir Bharati",
+            status: "Reading",
+            img: require('../src/Images/books/10.jpg')
+        },
+        {
             title: "The myth of Sisyphus",
             author: "Albert Camus",
-            status: "Reading",
+            status: "Read",
             img: require('../src/Images/books/9.jpg')
         },
         {
