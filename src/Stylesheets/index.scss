@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 
 @font-face {
   font-family: webflow-icons;
@@ -23,7 +22,7 @@
   --text-secondary: #0f0f0e80;
   --attention: #c78f1f;
   --card-bg: #fff;
-  --card-bg-hover: #fff;
+  --card-bg-hover: #fafafa;
   --text-color-secondary: rgb(41, 37, 36);
   --text-color-tertiary: rgb(163, 163, 163);
   --faded-black: #1b1b18cc;
@@ -35,9 +34,11 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
   font-size: min(6vw, 24px);
   line-height: 1.5;
+  font-weight: 500;
   color: var(--faded-black);
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
@@ -97,7 +98,8 @@ a {
     letter-spacing: 2px;
     color: var(--black);
     font-variation-settings: "wght" 250;
-    font-family: Crimson Pro, Times New Roman, sans-serif;
+    font-family: "Barlow Condensed", serif;
+
     font-weight: 500;
     line-height: 100%;
     letter-spacing: normal;
@@ -111,6 +113,7 @@ a {
     color: var(--blue);
     margin-top: 8px;
     font-weight: 500;
+    font-family: "PT Mono", monospace;
   }
 
   .about {
@@ -126,13 +129,13 @@ a {
 .section-title {
   font-size: 24px;
   margin-top: 30px;
-  font-family: Crimson Pro, Times New Roman, sans-serif;
+  font-family: "Barlow Condensed", serif;
+
   color: var(--black);
   font-weight: 500;
   letter-spacing: normal;
   font-variation-settings: "wght" 400;
   line-height: 150%;
-  letter-spacing: normal;
 }
 
 .now {
@@ -208,7 +211,7 @@ a {
         font-size: 16px;
         color: var(--text-color);
         letter-spacing: normal;
-        font-weight: 500;
+        font-weight: 600;
       }
 
       a:hover {
@@ -334,7 +337,6 @@ a {
 
       &:hover {
         cursor: pointer;
-        background-color: var(--card-bg-hover);
 
         img {
           transform: translateY(30px);
@@ -351,7 +353,6 @@ a {
         transform: translateY(0px);
         transition: transform ease 300ms;
         cursor: pointer;
-        filter: grayscale(40%);
       }
 
       .book-title {
@@ -362,7 +363,7 @@ a {
       .book-author {
         font-size: 12px;
         color: var(--text-secondary);
-        font-weight: 500;
+        font-weight: 600;
         margin-top: 8px;
       }
     }
