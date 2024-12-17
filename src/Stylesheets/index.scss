@@ -393,3 +393,24 @@ a {
   }
 }
 
+
+.wave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.wave svg {
+  width: 90px;
+  height: 20px;
+}
+
+.wave path {
+  stroke: #0389ff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  fill: none;
+}
