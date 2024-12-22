@@ -1,5 +1,12 @@
 import { useEffect } from 'react';
 import Home from './Pages/home';
+import Books from './Pages/books';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './Components/navbar';
+import './Stylesheets/index.scss';
+import Social from './Components/social';
+import { data } from './constants';
+import Bookmarks from './Pages/bookmarks';
 
 function App() {
     useEffect(() => {
@@ -32,8 +39,20 @@ function App() {
       animate();
   }, []);
 
+  const path = window.location.pathname;
+
   return (
-    <Home/>
+    <div className='main'>
+        <div className='container'>
+        <Navbar activeElement={path} />
+         <Routes>
+            <Route path="/lucifer" element={<Home />} />
+            <Route path="/lucifer/books" element={<Books books={data.books}/>} />
+            <Route path="/lucifer/bookmarks" element={<Bookmarks />} />
+         </Routes>
+         <Social socials={data.socials} updatedOn={data.updatedOn} />
+         </div>
+      </div>
   );
 }
 

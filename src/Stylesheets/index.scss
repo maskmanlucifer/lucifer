@@ -154,7 +154,22 @@ a {
       opacity: 1;
     }
   }
+
+  .list-wrapper {
+    position: relative;
+
+    #bird {
+      position: absolute;
+      top: -23px;
+      right: 20px;
+      width: 24px;
+      height: 24px;
+      z-index: 1;
+      transform: scaleX(-1);
+    }
+  }
 }
+
 
 .list-wrapper {
   background-color: var(--card-bg);
@@ -309,9 +324,14 @@ a {
   display: flex;
   flex-direction: column;
 
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
   .books-list {
     display: flex;
-    margin-top: 4px;
+    flex-wrap: wrap;
     gap: 8px;
 
     .book {
@@ -326,6 +346,7 @@ a {
       border-radius: 6px;
       position: relative;
       height: 330px;
+      flex: 1 0 40%;
 
       .book-status {
         font-size: 12px;
@@ -337,6 +358,7 @@ a {
 
       &:hover {
         cursor: pointer;
+        background-color: var(--card-bg-hover);
 
         img {
           transform: translateY(30px);
@@ -394,6 +416,105 @@ a {
   }
 }
 
+.bookmarks-section {
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .bookmarks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .bookmark {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #e8e7e0;
+      font-size: 14px;
+      background: var(--card-bg);
+      border-radius: 4px;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      justify-content: space-between;
+
+      a {
+        color: var(--text-color);
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--card-bg-hover);
+        transition: background-color ease 300ms;
+
+        svg {
+          transform: rotate(-10deg);
+          transition: transform ease 800ms;
+        }
+      }
+    }
+
+    .bookmark:first-of-type {
+      a {
+        color: var(--blue);
+      }
+
+      svg {
+        color: var(--blue);
+        transition: color ease 300ms;
+      }
+    }
+
+    .bookmark:nth-of-type(4) {
+      a {
+        color: var(--attention);
+      }
+
+      svg {
+        color: var(--attention);
+        transition: color ease 300ms;
+      }
+
+    }
+
+    .bookmark:nth-of-type(2) {
+      a {
+        color: var(--green);
+      }
+
+      svg {
+        color: var(--green);
+        transition: color ease 300ms;
+      }
+
+    }
+
+    .bookmark:nth-of-type(3) {
+      a {
+        color: var(--yellow);
+      }
+
+      svg {
+        color: var(--yellow);
+        transition: color ease 300ms;
+      }
+
+    }
+
+    .bookmark:last-of-type {
+      a {
+        color: var(--red);
+      }
+
+      svg {
+        color: var(--red);
+        transition: color ease 300ms;
+      }
+    }
+  }
+}
 
 .wave {
   display: flex;
@@ -414,4 +535,43 @@ a {
   stroke-width: 2px;
   stroke-linecap: round;
   fill: none;
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 8px 2px;
+  border: 1px solid #e8e7e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  .navbar-item a {
+    padding: 4px 12px;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #eae9e3;
+      transition: background-color ease 200ms;
+    }
+  }
+
+  .navbar-item a {
+    color: var(--text-color);
+  }
+
+  .navbar-item.active a {
+    background-color: #e8e7e0;
+  }
+
+  .navbar-item:first-of-type {
+    flex: 1;
+  }
 }
