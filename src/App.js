@@ -44,12 +44,13 @@ function App() {
   return (
     <div className='main'>
         <div className='container'>
-        <Navbar activeElement={path} />
-         <Routes>
-            <Route path="/lucifer" element={<Home />} />
-            <Route path="/lucifer/books" element={<Books books={data.books}/>} />
-            <Route path="/lucifer/bookmarks" element={<Bookmarks />} />
-         </Routes>
+        <Navbar path={path} />
+           <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/lucifer" element={<Home />} />
+              <Route path="/books" element={<Books books={data.books}/>} />
+              <Route path="/bookmarks" element={<Bookmarks />} />
+           </Routes>
          <Social socials={data.socials} updatedOn={data.updatedOn} />
          </div>
       </div>

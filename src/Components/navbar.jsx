@@ -1,39 +1,26 @@
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const NAVBAR_ITEMS = [
-    { name: "Home", url: "/lucifer" },
-    { name: "Books", url: "/lucifer/books" },
-    { name: "Bookmarks", url: "/lucifer/bookmarks" }
+    { name: "Home", url: "/" },
+    { name: "Books", url: "/books" },
+    { name: "Bookmarks", url: "/bookmarks" }
 ];
 
-const getPathIndex = (path) => {
-    switch (path) {
-        case "/lucifer":
-            return 0;
-        case "/lucifer/books":
-            return 1;
-        case "/lucifer/bookmarks":
-            return 2;
-        default:
-            return 0;
-    }
-};
+const Navbar = ({path}) => { 
 
-const Navbar = () => { 
-    const [activeElement, setActiveElement] = useState(getPathIndex(window.location.pathname));
+    const location = useLocation();
+    const lastPath = location.pathname.split("/").pop();
+
 
     return (
         <div className="navbar">
             {NAVBAR_ITEMS.map((item, index) => (
-                <div className={`navbar-item ${activeElement === index ? "active" : ""}`} key={index}>
-                <a
-                    key={index}
-                    href={item.url}
-                    onClick={() => setActiveElement(index)}
-                >
+                <div className={`navbar-item ${`/${lastPath}` === item.url ? "active" : ""}`} key={index}>
+                <Link to={item.url} className="navbar-link">
                     {item.name}
-                </a>
+                </Link>
                 </div>
+
             ))}
         </div>
     )
