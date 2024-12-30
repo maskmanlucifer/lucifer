@@ -1,5 +1,5 @@
 import { getSaturnIcon } from "./helpers";
-const HeroImage = require("../Images/hero-image.jpg");
+const HeroImage = require("../Images/hero-image-4.jpg");
 
 const Header = ({ general }) => {
   return (
