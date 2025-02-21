@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/lucifer/static/css/main.47b424d5.css",
-    "main.js": "/lucifer/static/js/main.e86362c3.js",
-    "static/media/hero-image-4.jpg": "/lucifer/static/media/hero-image-4.119e9fd4fa4bac9ab15e.jpg",
+    "main.css": "/lucifer/static/css/main.6b9ccc6a.css",
+    "main.js": "/lucifer/static/js/main.ede80f1e.js",
     "static/media/2.jpg": "/lucifer/static/media/2.c1b7c5e7e11e592f46d3.jpg",
     "static/media/6.jpg": "/lucifer/static/media/6.5391b4afbff737c4b491.jpg",
     "static/media/8.jpg": "/lucifer/static/media/8.192d053a132e65f05eed.jpg",
@@ -18,11 +17,11 @@
     "index.html": "/lucifer/index.html",
     "static/media/linkedin.svg": "/lucifer/static/media/linkedin.a13587b9644643e1ca31db6ae72f5789.svg",
     "static/media/gmail.svg": "/lucifer/static/media/gmail.f12319849e28413aaa94f1c11fd35eef.svg",
-    "main.47b424d5.css.map": "/lucifer/static/css/main.47b424d5.css.map",
-    "main.e86362c3.js.map": "/lucifer/static/js/main.e86362c3.js.map"
+    "main.6b9ccc6a.css.map": "/lucifer/static/css/main.6b9ccc6a.css.map",
+    "main.ede80f1e.js.map": "/lucifer/static/js/main.ede80f1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.47b424d5.css",
-    "static/js/main.e86362c3.js"
+    "static/css/main.6b9ccc6a.css",
+    "static/js/main.ede80f1e.js"
   ]
 }
