@@ -575,3 +575,27 @@ a {
     flex: 1;
   }
 }
+
+.magnetLines-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  justify-items: center;
+  align-items: center;
+
+  width: 344px;
+  height: 400px;
+  background-color: var(--card-bg);
+
+  padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.magnetLines-container span {
+  display: block;
+  transform-origin: center;
+  will-change: transform;
+  transform: rotate(var(--rotate));
+}

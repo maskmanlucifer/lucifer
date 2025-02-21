@@ -1,10 +1,20 @@
 import { getSaturnIcon } from "./helpers";
-const HeroImage = require("../Images/hero-image-4.jpg");
+import MagnetLines from "./MagnetLines";
+// const HeroImage = require("../Images/hero-image-4.jpg");
 
 const Header = ({ general }) => {
   return (
     <div className="header">
-      <img src={HeroImage} alt="hero-image" />
+      {/* <img src={HeroImage} alt="hero-image" /> */}
+      <MagnetLines
+        rows={9}
+        columns={9}
+        containerSize="344px"
+        lineColor="black"
+        lineWidth="2px"
+        lineHeight="10px"
+        baseAngle={0}
+      />
       <p className="heading">{general.displayName}</p>
       <div className="sub-heading">
         <span>{general.displayOccupation}</span>
