@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lucifer/static/css/main.762a821a.css",
+    "main.css": "/lucifer/static/css/main.39cef5f2.css",
     "main.js": "/lucifer/static/js/main.7b5fce90.js",
     "static/media/readdotcv.svg": "/lucifer/static/media/readdotcv.aee8ad521d3fc2671c8235d5b3f764bc.svg",
     "static/media/github.svg": "/lucifer/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
@@ -9,11 +9,11 @@
     "static/media/linkedin.svg": "/lucifer/static/media/linkedin.a13587b9644643e1ca31db6ae72f5789.svg",
     "static/media/gmail.svg": "/lucifer/static/media/gmail.f12319849e28413aaa94f1c11fd35eef.svg",
     "static/media/chevron.svg": "/lucifer/static/media/chevron.e53ae15c26af6a430657c34df96da21e.svg",
-    "main.762a821a.css.map": "/lucifer/static/css/main.762a821a.css.map",
+    "main.39cef5f2.css.map": "/lucifer/static/css/main.39cef5f2.css.map",
     "main.7b5fce90.js.map": "/lucifer/static/js/main.7b5fce90.js.map"
   },
   "entrypoints": [
-    "static/css/main.762a821a.css",
+    "static/css/main.39cef5f2.css",
     "static/js/main.7b5fce90.js"
   ]
 }
