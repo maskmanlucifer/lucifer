@@ -46,7 +46,7 @@ export const data = {
       description:
         "A personal task management tool that helps you focus on what's important.",
       projectUrl: "https://maskmanlucifer.github.io/intent-site/",
-      status: "Building",
+      status: "Live",
     },
     {
       title: "Mosaix",
@@ -58,65 +58,86 @@ export const data = {
   ],
   books: [
     {
+      title: "Sprint",
+      author: "Jake Knapp",
+      status: "Reading",
+      img: 11,
+    },
+    {
       title: "Gunaahon Ka Devta",
       author: "Dharamvir Bharati",
-      status: "Reading",
-      img: require("../src/Images/books/10.jpg"),
+      status: "Read",
+      img: 10,
     },
     {
       title: "The myth of Sisyphus",
       author: "Albert Camus",
       status: "Read",
-      img: require("../src/Images/books/9.jpg"),
+      img: 9,
     },
     {
       title: "Gaban",
       author: "Munsi Premchand",
       status: "Read",
-      img: require("../src/Images/books/7.jpg"),
+      img: 7,
     },
     {
       title: "The little book of Alpaca Philosophy",
       author: "Jennifer McCartney",
       status: "Read",
-      img: require("../src/Images/books/8.jpg"),
+      img: 8,
     },
     {
       title: "Sapiens",
       author: "Yuval Noah Harari",
       status: "Read",
-      img: require("../src/Images/books/6.jpg"),
+      img: 6,
     },
     {
       title: "Normal People",
       author: "Sally Rooney",
       status: "Read",
-      img: require("../src/Images/books/2.jpg"),
+      img: 2,
     },
     {
       title: "The shortest history of India",
       author: "John Zubrzycki",
       status: "Read",
-      img: require("../src/Images/books/4.jpg"),
+      img: 4,
     },
     {
       title: "If cats disappeared from the world",
       author: "Genki Kawamura",
       status: "Read",
-      img: require("../src/Images/books/1.jpg"),
+      img: 1,
     },
     {
       title: "A Man Called Ove",
       author: "Fredrik Backman",
       status: "Read",
-      img: require("../src/Images/books/3.jpg"),
+      img: 3,
     },
     {
       title: "Make time",
       author: "Jake Knapp",
       status: "Read",
-      img: require("../src/Images/books/5.jpg"),
+      img: 5,
     },
   ],
   updatedOn: "22/07/2024",
 };
+
+export const WORK = [
+  {
+    title: "Frontend Developer",
+    company: "Titan mail",
+    date: "2022 - Present",
+    logoUrl: "https://ik.imagekit.io/8tmvchj44/titan.png"
+  },
+  {
+    title: "Backend Developer Intern",
+    company: "Sharechat",
+    date: "2021 - 2022",
+    logoUrl: "https://ik.imagekit.io/8tmvchj44/sharechat.png"
+  },
+];
