@@ -5,7 +5,7 @@ export const data = {
     displayLocation: "India",
     displayEmail: "maskmanaman@gmail.com",
     about:
-      "I'm constantly exploring the intersection of design and code, striving to craft innovative solutions that address real-world challenges. I find inspiration in everything from music and nature to the vast possibilities of the internet.",
+      "I love combining design and code to build creative solutions for real-world problems. I'm inspired by music, nature, and the endless ideas I find online.",
   },
   socials: [
     {
@@ -31,30 +31,36 @@ export const data = {
   ],
   now: [
     {
-      text: "Trying to consume less content.",
+      text: "Reducing content consumption.",
     },
     {
-      text: "Learning about design systems.",
+      text: "Exploring design systems.",
     },
     {
-      text: "Searching useful ideas to work on.",
+      text: "Looking for meaningful project ideas.",
     },
   ],
   projects: [
     {
       title: "Intent",
       description:
-        "A personal task management tool that helps you focus on what's important.",
+        "A personal task manager designed to help you focus on what matters most.",
       projectUrl: "https://maskmanlucifer.github.io/intent-site/",
       status: "Live",
     },
     {
       title: "Mosaix",
       description:
-        "A photomosaic generator, designed to create a larger image from many smaller ones.",
+        "A photomosaic generator that creates a large image from many smaller ones.",
       projectUrl: "https://www.figma.com/design/8l7OdrvpfGstCc3tDo2AJ4/Mosaix",
       status: "Archived",
     },
+    {
+      title: "Maskman",
+      description: "A portfolio design project for learning Figma basics.",
+      projectUrl: "https://www.figma.com/design/PwmH3niTQXeJVGgTCO32bJ/Mark-Portfolio",
+      status: "Archived",
+    }
   ],
   books: [
     {
@@ -70,7 +76,7 @@ export const data = {
       img: 10,
     },
     {
-      title: "The myth of Sisyphus",
+      title: "The Myth of Sisyphus",
       author: "Albert Camus",
       status: "Read",
       img: 9,
@@ -82,7 +88,7 @@ export const data = {
       img: 7,
     },
     {
-      title: "The little book of Alpaca Philosophy",
+      title: "The Little Book of Alpaca Philosophy",
       author: "Jennifer McCartney",
       status: "Read",
       img: 8,
@@ -100,13 +106,13 @@ export const data = {
       img: 2,
     },
     {
-      title: "The shortest history of India",
+      title: "The Shortest History of India",
       author: "John Zubrzycki",
       status: "Read",
       img: 4,
     },
     {
-      title: "If cats disappeared from the world",
+      title: "If Cats Disappeared from the World",
       author: "Genki Kawamura",
       status: "Read",
       img: 1,
@@ -118,7 +124,7 @@ export const data = {
       img: 3,
     },
     {
-      title: "Make time",
+      title: "Make Time",
       author: "Jake Knapp",
       status: "Read",
       img: 5,
