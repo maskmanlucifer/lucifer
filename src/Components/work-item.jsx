@@ -37,6 +37,22 @@ const WorkItem = ({ title, company, date, logoUrl }) => {
             <Chevron /> Worked on{" "}
             <a
               className="list-links"
+              href="https://youtu.be/CknLIGH08TY"
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open("https://youtu.be/CknLIGH08TY", "_blank");
+              }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Invoice Builder
+            </a>{" "}
+            feature
+          </div>
+          <div className="list-item">
+            <Chevron /> Worked on{" "}
+            <a
+              className="list-links"
               href="https://youtu.be/bJsvtCUbuCE"
               onClick={(e) => {
                 e.stopPropagation();
