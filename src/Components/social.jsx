@@ -18,7 +18,7 @@ const getIcon = (platform) => {
   }
 };
 
-const Social = ({ socials, updatedOn }) => {
+const Social = ({ socials }) => {
   if (!socials || socials.length === 0) return null;
   return (
     <div className="social">
@@ -26,10 +26,13 @@ const Social = ({ socials, updatedOn }) => {
         <ul className="social-list">
           {socials.map((contactItem, index) => {
             return (
-              <li key={"social" + index}>
-                <a href={contactItem.url} target="_blank" rel="noreferrer">
-                  {getIcon(contactItem.platform)}
-                </a>
+              <li key={"social" + index} className="social-item">
+                <div className="social-tooltip">
+                  <a href={contactItem.url} target="_blank" rel="noreferrer" title="">
+                    {getIcon(contactItem.platform)}
+                  </a>
+                  <span className="tooltip-text">{contactItem.platform}</span>
+                </div>
               </li>
             );
           })}

@@ -278,6 +278,39 @@ a {
   justify-content: space-between;
   align-items: center;
 
+  .social-item {
+    position: relative;
+
+    &:first-of-type {
+      .tooltip-text {
+        left: calc(50% + 16px);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .tooltip-text {
+        display: block;
+      }
+    }
+  }
+
+    .tooltip-text {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333333;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
   .section-emoji {
     flex: 1;
     text-align: end;
@@ -474,11 +507,11 @@ a {
 
     .bookmark:nth-of-type(4n) {
       a {
-        color: var(--attention);
+        color: var(--red);
       }
 
       svg {
-        color: var(--attention);
+        color: var(--red);
         transition: color ease 300ms;
       }
 
@@ -498,11 +531,11 @@ a {
 
     .bookmark:nth-of-type(5n) {
       a {
-        color: var(--yellow);
+        color: var(--blue);;
       }
 
       svg {
-        color: var(--yellow);
+        color: var(--blue);;
         transition: color ease 300ms;
       }
 
