@@ -64,9 +64,21 @@ export const data = {
   ],
   books: [
     {
+      title: 'Design as Art',
+      author: 'Bruno Munari',
+      status: 'Reading',
+      img: 13,
+    },
+    {
+      title: 'Godan',
+      author: 'Munshi Premchand',
+      status: 'Reading',
+      img: 12,
+    },
+    {
       title: "Sprint",
       author: "Jake Knapp",
-      status: "Reading",
+      status: "Read",
       img: 11,
     },
     {
