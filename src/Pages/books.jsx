@@ -10,7 +10,7 @@ const Books = ({ books }) => {
             return (
               <div className="book" key={book.title}>
                 <p className="book-status">{book.status}</p>
-                <img src={'https://ik.imagekit.io/8tmvchj44/' + book.img + '.jpg'} alt={book.title} />
+                <img src={book.url || 'https://ik.imagekit.io/8tmvchj44/' + book.img + '.jpg'} alt={book.title} />
                 <div className="book-details">
                   <p className="book-title">{book.title}</p>
                   <p className="book-author">{book.author}</p>

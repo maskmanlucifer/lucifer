@@ -34,10 +34,10 @@ export const data = {
       text: "Reducing content consumption.",
     },
     {
-      text: "Exploring design systems.",
+      text: "Learning animation.",
     },
     {
-      text: "Looking for meaningful project ideas.",
+      text: "Building Intent (Productivity) tool.",
     },
   ],
   projects: [
@@ -63,6 +63,13 @@ export const data = {
     }
   ],
   books: [
+    {
+      title: 'Tuesdays with Morrie',
+      author: 'Mitch Albom',
+      status: 'Reading',
+      img: 14,
+      url: 'https://ik.imagekit.io/rkfjdo52u/6900.jpg'
+    },
     {
       title: 'Design as Art',
       author: 'Bruno Munari',
