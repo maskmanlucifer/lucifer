@@ -42,6 +42,13 @@ export const data = {
   ],
   projects: [
     {
+      title: "lucifer.loops",
+      description:
+        "An instagram page where I post my animation learning progress.",
+      projectUrl: "https://www.instagram.com/lucifer.loops/",
+      status: "Live",
+    },
+    {
       title: "Intent",
       description:
         "A personal task manager designed to help you focus on what matters most.",
@@ -131,7 +138,7 @@ export const data = {
       img: 4,
     },
     {
-      title: "If Cats Disappeared from the World",
+      title: "If Cats Disappear from the World",
       author: "Genki Kawamura",
       status: "Read",
       img: 1,
