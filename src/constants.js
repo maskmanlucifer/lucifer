@@ -71,9 +71,21 @@ export const data = {
   ],
   books: [
     {
+      title: "Galileo's daughter",
+      author: "Dava Sobel",
+      status: "Reading",
+      url: 'https://ik.imagekit.io/dnz8iqrsyc/18646.jpg'
+    },
+    {
+      title: "Surely you're joking Mr. Feynman",
+      author: "Richard Feynman",
+      status: "Reading",
+      url: 'https://ik.imagekit.io/dnz8iqrsyc/35167685.jpg'
+    },
+    {
       title: 'Tuesdays with Morrie',
       author: 'Mitch Albom',
-      status: 'Reading',
+      status: 'Read',
       img: 14,
       url: 'https://ik.imagekit.io/rkfjdo52u/6900.jpg'
     },
@@ -86,7 +98,7 @@ export const data = {
     {
       title: 'Godan',
       author: 'Munshi Premchand',
-      status: 'Reading',
+      status: 'Read',
       img: 12,
     },
     {

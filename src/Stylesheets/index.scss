@@ -386,6 +386,14 @@ a {
       height: 330px;
       flex: 1 0 40%;
 
+      &.reading {
+      background-color: #fefef2; // very light shade of yellow
+      }
+
+      &.read {
+        background-color: #f2faff; // very light shade of blue-green
+      }
+
       .book-status {
         font-size: 12px;
         color: var(--faded-black);
@@ -396,7 +404,6 @@ a {
 
       &:hover {
         cursor: pointer;
-        background-color: var(--card-bg-hover);
 
         img {
           transform: translateY(30px);
