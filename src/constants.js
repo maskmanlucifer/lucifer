@@ -71,15 +71,27 @@ export const data = {
   ],
   books: [
     {
+      title: "A thousand splendid suns",
+      author: "Khaled Hosseini",
+      status: "Reading",
+      url: 'https://ik.imagekit.io/rkfjdo52u/128029.jpg'
+    },
+    {
+      title: "To kill a mockingbird",
+      author: "Harper Lee",
+      status: "Read",
+      url: 'https://ik.imagekit.io/rkfjdo52u/56916837.jpg'
+    },
+    {
       title: "Galileo's daughter",
       author: "Dava Sobel",
-      status: "Reading",
+      status: "Read",
       url: 'https://ik.imagekit.io/dnz8iqrsyc/18646.jpg'
     },
     {
       title: "Surely you're joking Mr. Feynman",
       author: "Richard Feynman",
-      status: "Reading",
+      status: "Read",
       url: 'https://ik.imagekit.io/dnz8iqrsyc/35167685.jpg'
     },
     {
