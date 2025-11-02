@@ -49,6 +49,12 @@ export const data = {
       status: "Live",
     },
     {
+      title: "Crochrome",
+      description: "A tool to help you resize images to exact dimensions which are accepted in chrome extension publishing.",
+      projectUrl: "https://maskmanlucifer.github.io/crochrome/",
+      status: "Live",
+    },
+    {
       title: "refspace",
       description: "A website to generate random 3d references of cube and cylinder to help you in perspective drawing.",
       projectUrl: "https://maskmanlucifer.github.io/refspace/",
