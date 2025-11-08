@@ -49,18 +49,6 @@ export const data = {
       status: "Live",
     },
     {
-      title: "Crochrome",
-      description: "A tool to help you resize images to exact dimensions which are accepted in chrome extension publishing.",
-      projectUrl: "https://maskmanlucifer.github.io/crochrome/",
-      status: "Live",
-    },
-    {
-      title: "refspace",
-      description: "A website to generate random 3d references of cube and cylinder to help you in perspective drawing.",
-      projectUrl: "https://maskmanlucifer.github.io/refspace/",
-      status: "Live",
-    },
-    {
       title: "Intent",
       description:
         "A personal task manager designed to help you focus on what matters most.",
@@ -79,7 +67,19 @@ export const data = {
       description: "A portfolio design project for learning Figma basics.",
       projectUrl: "https://www.figma.com/design/PwmH3niTQXeJVGgTCO32bJ/Mark-Portfolio",
       status: "Archived",
-    }
+    },
+    {
+      title: "Crochrome",
+      description: "A tool to help you resize images to exact dimensions which are accepted in chrome extension publishing.",
+      projectUrl: "https://maskmanlucifer.github.io/crochrome/",
+      status: "Live",
+    },
+    {
+      title: "refspace",
+      description: "A website to generate random 3d references of cube and cylinder to help you in perspective drawing.",
+      projectUrl: "https://maskmanlucifer.github.io/refspace/",
+      status: "Live",
+    },
   ],
   books: [
     {
