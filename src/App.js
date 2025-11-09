@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Home from './Pages/home';
 import Books from './Pages/books';
 import { Route, Routes } from 'react-router-dom';
@@ -8,7 +8,48 @@ import Social from './Components/social';
 import { data } from './constants';
 import Bookmarks from './Pages/bookmarks';
 
+const getInitialTheme = () => {
+  if (typeof window === 'undefined') {
+    return 'light';
+  }
+
+  const storedTheme = window.localStorage.getItem('theme');
+
+  if (storedTheme === 'light' || storedTheme === 'dark') {
+    return storedTheme;
+  }
+
+  if (window.matchMedia) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  return 'light';
+};
+
 function App() {
+  const [theme, setTheme] = useState(getInitialTheme);
+
+  useEffect(() => {
+    if (typeof document === 'undefined') {
+      return;
+    }
+
+    document.body.classList.remove('light-theme', 'dark-theme');
+    document.body.classList.add(`${theme}-theme`);
+
+    if (typeof window !== 'undefined') {
+      try {
+        window.localStorage.setItem('theme', theme);
+      } catch (error) {
+        // ignore persistence errors (e.g., Safari private mode)
+      }
+    }
+  }, [theme]);
+
+  const handleThemeToggle = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
     useEffect(() => {
       let xs = [];
       for (let i = 0; i <= 200; i++) {
@@ -44,7 +85,7 @@ function App() {
   return (
     <div className='main'>
         <div className='container'>
-        <Navbar path={path} />
+        <Navbar path={path} theme={theme} onToggleTheme={handleThemeToggle} />
            <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/lucifer" element={<Home />} />

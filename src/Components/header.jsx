@@ -10,7 +10,7 @@ const Header = ({ general }) => {
         rows={9}
         columns={9}
         containerSize="344px"
-        lineColor="black"
+        lineColor="var(--magnet-line-color)"
         lineWidth="2px"
         lineHeight="10px"
         baseAngle={0}

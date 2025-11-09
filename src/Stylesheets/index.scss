@@ -13,6 +13,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
   --white: #fff;
   --black: #0b0e10;
   --blue: #373cf1;
@@ -23,14 +26,89 @@
   --attention: #c78f1f;
   --card-bg: #fff;
   --card-bg-hover: #fafafa;
+  --text-color: rgb(23, 23, 23);
   --text-color-secondary: rgb(41, 37, 36);
   --text-color-tertiary: rgb(163, 163, 163);
   --faded-black: #1b1b18cc;
+  --border-color: #e8e7e0;
+  --hover-neutral: #eae9e3;
+  --navbar-shadow: rgba(0, 0, 0, 0.05);
+  --icon-muted: #aeaeb4;
+  --tooltip-bg: #333333;
+  --work-hover-bg: #f5fff3;
+  --background-color: #f6f4f0;
+  --book-reading-bg: #fefef2;
+  --book-read-bg: #f2faff;
+  --book-hover-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  --magnet-line-color: rgba(15, 23, 42, 0.65);
+  --status-yellow-bg: #dfae29;
+  --status-yellow-text: #ffffff;
+  --status-archived-bg: #c78f1f;
+  --status-archived-text: #ffffff;
 }
 
-:root {
-  --background-color: #f6f4f0;
+body.light-theme {
+  --white: #fff;
+  --black: #0b0e10;
+  --blue: #373cf1;
+  --red: #FB6514;
+  --green: rgb(22, 170, 99);
+  --yellow: #dfae29;
+  --text-secondary: #0f0f0e80;
+  --attention: #c78f1f;
+  --card-bg: #fff;
+  --card-bg-hover: #fafafa;
   --text-color: rgb(23, 23, 23);
+  --text-color-secondary: rgb(41, 37, 36);
+  --text-color-tertiary: rgb(163, 163, 163);
+  --faded-black: #1b1b18cc;
+  --border-color: #e8e7e0;
+  --hover-neutral: #eae9e3;
+  --navbar-shadow: rgba(0, 0, 0, 0.05);
+  --icon-muted: #aeaeb4;
+  --tooltip-bg: #333333;
+  --work-hover-bg: #f5fff3;
+  --background-color: #f6f4f0;
+  --book-reading-bg: #fefef2;
+  --book-read-bg: #f2faff;
+  --book-hover-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  --magnet-line-color: rgba(15, 23, 42, 0.65);
+  --status-yellow-bg: #e0a300;
+  --status-yellow-text: #ffffff;
+  --status-archived-bg: #c78f1f;
+  --status-archived-text: #ffffff;
+}
+
+body.dark-theme {
+  --white: #f9fafb;
+  --black: #f7fafc;
+  --blue: #6366f1;
+  --red: #FB6514;
+  --green: #22c55e;
+  --yellow: #f59e0b;
+  --text-secondary: rgba(203, 213, 225, 0.55);
+  --attention: #facc15;
+  --card-bg: #111827;
+  --card-bg-hover: #1a2233;
+  --text-color: #e2e8f0;
+  --text-color-secondary: rgba(203, 213, 225, 0.85);
+  --text-color-tertiary: rgba(148, 163, 184, 0.75);
+  --faded-black: rgba(226, 232, 240, 0.85);
+  --border-color: rgba(100, 116, 139, 0.45);
+  --hover-neutral: rgba(148, 163, 184, 0.16);
+  --navbar-shadow: rgba(2, 6, 23, 0.6);
+  --icon-muted: #9ba7c7;
+  --tooltip-bg: rgba(15, 23, 42, 0.92);
+  --work-hover-bg: rgba(99, 102, 241, 0.08);
+  --background-color: #0b1120;
+  --book-reading-bg: rgba(234, 179, 8, 0.14);
+  --book-read-bg: rgba(59, 130, 246, 0.14);
+  --book-hover-shadow: 0 18px 40px rgba(2, 6, 23, 0.55);
+  --magnet-line-color: rgba(148, 163, 184, 0.45);
+  --status-yellow-bg: #d97706;
+  --status-yellow-text: #ffffff;
+  --status-archived-bg: #b45309;
+  --status-archived-text: #ffffff;
 }
 
 body {
@@ -39,13 +117,25 @@ body {
   font-size: min(6vw, 24px);
   line-height: 1.5;
   font-weight: 500;
-  color: var(--faded-black);
+  color: var(--text-color);
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   text-size-adjust: none;
   position: relative;
   letter-spacing: 1px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .main {
@@ -96,7 +186,7 @@ a {
     font-size: 36px;
     font-style: normal;
     letter-spacing: 2px;
-    color: var(--black);
+    color: var(--text-color);
     font-variation-settings: "wght" 250;
     font-family: "Barlow Condensed", serif;
 
@@ -119,7 +209,7 @@ a {
   .about {
     font-size: 15px;
     margin-top: 32px;
-    color: var(--faded-black);
+    color: var(--text-color-secondary);
     background-color: var(--card-bg);
     padding: 16px;
     border-radius: 4px;
@@ -131,7 +221,7 @@ a {
   margin-top: 30px;
   font-family: "Barlow Condensed", serif;
 
-  color: var(--black);
+  color: var(--text-color);
   font-weight: 500;
   letter-spacing: normal;
   font-variation-settings: "wght" 400;
@@ -141,7 +231,7 @@ a {
 .now {
   .now-list {
     font-size: 15px;
-    color: var(--faded-black);
+    color: var(--text-color-secondary);
     margin-left: 16px;
   }
 
@@ -197,7 +287,8 @@ a {
       font-weight: 800;
 
       &.paused {
-        background-color: var(--yellow);
+        background-color: var(--status-yellow-bg);
+        color: var(--status-yellow-text);
       }
 
       &.live {
@@ -213,7 +304,8 @@ a {
       }
 
       &.archived {
-        background-color: var(--attention);
+        background-color: var(--status-archived-bg);
+        color: var(--status-archived-text);
       }
     }
 
@@ -240,7 +332,7 @@ a {
 
       .description {
         font-size: 15px;
-        color: var(--faded-black);
+        color: var(--text-color-secondary);
         margin-top: 12px;
       }
 
@@ -302,8 +394,8 @@ a {
       bottom: calc(100% + 8px);
       left: 50%;
       transform: translateX(-50%);
-      background-color: #333333;
-      color: white;
+      background-color: var(--tooltip-bg);
+      color: var(--white);
       padding: 4px 8px;
       border-radius: 4px;
       font-size: 12px;
@@ -344,7 +436,7 @@ a {
   svg {
     height: 20px;
     width: 20px;
-    fill: #aeaeb4;
+    fill: var(--icon-muted);
   }
 
   li a:hover {
@@ -385,18 +477,19 @@ a {
       position: relative;
       height: 330px;
       flex: 1 0 40%;
+      border: 1px solid var(--border-color);
 
       &.reading {
-      background-color: #fefef2; // very light shade of yellow
+        background-color: var(--book-reading-bg);
       }
 
       &.read {
-        background-color: #f2faff; // very light shade of blue-green
+        background-color: var(--book-read-bg);
       }
 
       .book-status {
         font-size: 12px;
-        color: var(--faded-black);
+        color: var(--text-color-tertiary);
         font-weight: 600;
         position: absolute;
         top: 12px;
@@ -404,6 +497,9 @@ a {
 
       &:hover {
         cursor: pointer;
+        background-color: var(--card-bg-hover);
+        box-shadow: var(--book-hover-shadow);
+        transform: translateY(-4px);
 
         img {
           transform: translateY(30px);
@@ -429,7 +525,7 @@ a {
 
       .book-author {
         font-size: 12px;
-        color: var(--text-secondary);
+        color: var(--text-color-secondary);
         font-weight: 600;
         margin-top: 8px;
       }
@@ -446,17 +542,25 @@ a {
     span {
       height: 24px;
       width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      color: var(--text-color);
+      transition: opacity ease 300ms, background-color ease 200ms, color ease 200ms;
 
       &:hover {
         cursor: pointer;
         opacity: 0.8;
-        transition: opacity ease 300ms;
+        background-color: var(--hover-neutral);
       }
     }
 
     svg {
       height: 100%;
       width: 100%;
+      fill: currentColor;
+      stroke: currentColor;
     }
   }
 }
@@ -475,7 +579,7 @@ a {
     .bookmark {
       width: 100%;
       height: 40px;
-      border: 1px solid #e8e7e0;
+      border: 1px solid var(--border-color);
       font-size: 14px;
       background: var(--card-bg);
       border-radius: 4px;
@@ -576,49 +680,80 @@ a {
 }
 
 .wave path {
-  stroke: #0389ff;
+  stroke: var(--blue);
   stroke-width: 2px;
   stroke-linecap: round;
   fill: none;
 }
 
 .navbar {
-  padding: 10px;
   display: flex;
-  gap: 4px;
+  gap: 8px;
   justify-content: space-between;
   align-items: center;
-  height: 32px;
+  min-height: 32px;
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 30px;
-  padding: 8px 2px;
-  border: 1px solid #e8e7e0;
+  padding: 8px;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px var(--navbar-shadow);
+  background-color: var(--card-bg);
+}
 
-  .navbar-item a {
-    padding: 4px 12px;
-    border-radius: 4px;
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
 
-    &:hover {
-      cursor: pointer;
-      background-color: #eae9e3;
-      transition: background-color ease 200ms;
-    }
+.navbar-item a {
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: var(--text-color);
+  transition: background-color ease 200ms, color ease 200ms;
+}
+
+.navbar-item a:hover {
+  cursor: pointer;
+  background-color: var(--hover-neutral);
+}
+
+.navbar-item.active a {
+  background-color: var(--hover-neutral);
+}
+
+.theme-toggle {
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color ease 200ms, color ease 200ms, border-color ease 200ms;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 16px;
+  min-width: 36px;
+
+  &:hover {
+    background-color: var(--hover-neutral);
   }
 
-  .navbar-item a {
-    color: var(--text-color);
+  &:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
   }
+}
 
-  .navbar-item.active a {
-    background-color: #e8e7e0;
-  }
-
-  .navbar-item:first-of-type {
-    flex: 1;
-  }
+.theme-toggle-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .magnetLines-container {
@@ -632,10 +767,11 @@ a {
   width: 344px;
   height: 400px;
   background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
 
   padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
 }
 
 .magnetLines-container span {
@@ -699,7 +835,7 @@ a {
 
     &:hover {
       cursor: pointer;
-      background-color: #f5fff3;
+      background-color: var(--work-hover-bg);
       transition: background-color  ease 300ms;
     }
 
