@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lucifer/static/css/main.3c447e27.css",
-    "main.js": "/lucifer/static/js/main.3c45a932.js",
+    "main.css": "/lucifer/static/css/main.fa19c167.css",
+    "main.js": "/lucifer/static/js/main.d8e15be8.js",
     "static/media/readdotcv.svg": "/lucifer/static/media/readdotcv.aee8ad521d3fc2671c8235d5b3f764bc.svg",
     "static/media/github.svg": "/lucifer/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
     "static/media/chevron-down.svg": "/lucifer/static/media/chevron-down.84da634f50d3c33b7227703c38c9a282.svg",
@@ -9,11 +9,11 @@
     "static/media/linkedin.svg": "/lucifer/static/media/linkedin.a13587b9644643e1ca31db6ae72f5789.svg",
     "static/media/gmail.svg": "/lucifer/static/media/gmail.f12319849e28413aaa94f1c11fd35eef.svg",
     "static/media/chevron.svg": "/lucifer/static/media/chevron.e53ae15c26af6a430657c34df96da21e.svg",
-    "main.3c447e27.css.map": "/lucifer/static/css/main.3c447e27.css.map",
-    "main.3c45a932.js.map": "/lucifer/static/js/main.3c45a932.js.map"
+    "main.fa19c167.css.map": "/lucifer/static/css/main.fa19c167.css.map",
+    "main.d8e15be8.js.map": "/lucifer/static/js/main.d8e15be8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c447e27.css",
-    "static/js/main.3c45a932.js"
+    "static/css/main.fa19c167.css",
+    "static/js/main.d8e15be8.js"
   ]
 }
