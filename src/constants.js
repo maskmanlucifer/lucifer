@@ -5,7 +5,7 @@ export const data = {
     displayLocation: "India",
     displayEmail: "maskmanaman@gmail.com",
     about:
-      "I love combining design and code to build creative solutions for real-world problems. I'm inspired by music, nature, and the endless ideas I find online.",
+      "I love combining design and code to build creative solutions for real-world problems. I'm inspired by music, nature, and photography — and the endless ideas I find online.",
   },
   socials: [
     {
@@ -34,9 +34,6 @@ export const data = {
       text: "Reducing content consumption.",
     },
     {
-      text: "Learning animation.",
-    },
-    {
       text: "Building Intent (Productivity) tool.",
     },
   ],
@@ -56,6 +53,14 @@ export const data = {
       status: "Live",
     },
     {
+      title: "Unsplash",
+      description:
+        "A visual diary from my journey of learning to see — capturing light, textures, and quiet moments through my lens.",
+      projectUrl: "https://unsplash.com/@maskmanlucifer",
+      status: "Live",
+      image: "https://images.unsplash.com/photo-1773255392462-e547f306c3c7?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
       title: "Mosaix",
       description:
         "A photomosaic generator that creates a large image from many smaller ones.",
@@ -67,18 +72,6 @@ export const data = {
       description: "A portfolio design project for learning Figma basics.",
       projectUrl: "https://www.figma.com/design/PwmH3niTQXeJVGgTCO32bJ/Mark-Portfolio",
       status: "Archived",
-    },
-    {
-      title: "Crochrome",
-      description: "A tool to help you resize images to exact dimensions which are accepted in chrome extension publishing.",
-      projectUrl: "https://maskmanlucifer.github.io/crochrome/",
-      status: "Live",
-    },
-    {
-      title: "refspace",
-      description: "A website to generate random 3d references of cube and cylinder to help you in perspective drawing.",
-      projectUrl: "https://maskmanlucifer.github.io/refspace/",
-      status: "Live",
     },
   ],
   books: [

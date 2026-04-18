@@ -6,7 +6,7 @@ const Projects = ({ projects }) => {
     <div className="projects">
       <p className="section-title">Projects</p>
       <div className="projects-list">
-        {projects.map(({ title, status, description, projectUrl }) => {
+        {projects.map(({ title, status, description, projectUrl, image }) => {
           return (
             <div
               className="project"
@@ -23,6 +23,7 @@ const Projects = ({ projects }) => {
                   </div>
                 </div>
                 <p className="description">{description}</p>
+                {image && <img src={image} alt={title} loading="lazy" />}
               </div>
             </div>
           );
