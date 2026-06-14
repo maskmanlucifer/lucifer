@@ -61,6 +61,13 @@ export const data = {
       image: "https://images.unsplash.com/photo-1773255392462-e547f306c3c7?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
+      title: "SizeUp",
+      description:
+        "A Chrome extension that saves your family's measurements and shows the right clothing sizes — right on product pages of Myntra, Amazon, and Flipkart.",
+      projectUrl: "https://maskmanlucifer.github.io/sizeup/",
+      status: "Live",
+    },
+    {
       title: "Mosaix",
       description:
         "A photomosaic generator that creates a large image from many smaller ones.",
