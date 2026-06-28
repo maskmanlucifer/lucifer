@@ -61,6 +61,13 @@ export const data = {
       image: "https://images.unsplash.com/photo-1773255392462-e547f306c3c7?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
+      title: "Argus Inspector",
+      description:
+        "A lightweight Chrome extension to inspect, measure, and edit any element on any page — without opening DevTools.",
+      projectUrl: "https://chromewebstore.google.com/detail/argus-inspector/amnfopnhghblhhmmmmdpkbkikmlebpkn",
+      status: "Live",
+    },
+    {
       title: "SizeUp",
       description:
         "A Chrome extension that saves your family's measurements and shows the right clothing sizes — right on product pages of Myntra, Amazon, and Flipkart.",
