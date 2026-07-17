@@ -1,6 +1,5 @@
 import { ReactComponent as GithubIcon } from "../Images/icons/github.svg";
 import { ReactComponent as LinkedInIcon } from "../Images/icons/linkedin.svg";
-import { ReactComponent as ReadCVIcon } from "../Images/icons/readdotcv.svg";
 import { ReactComponent as EmailIcon } from "../Images/icons/gmail.svg";
 
 const getIcon = (platform) => {
@@ -9,8 +8,6 @@ const getIcon = (platform) => {
       return <LinkedInIcon />;
     case "Github":
       return <GithubIcon />;
-    case "ReadCV":
-      return <ReadCVIcon />;
     case "Send Email":
       return <EmailIcon />;
     default:

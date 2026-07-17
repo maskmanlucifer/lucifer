@@ -19,11 +19,6 @@ export const data = {
       color: "#00BB83",
     },
     {
-      platform: "ReadCV",
-      url: "https://read.cv/maskman_lucifer",
-      color: "#F8C231",
-    },
-    {
       platform: "Send Email",
       url: "mailto:maskmanaman@gmail.com",
       color: "#AAAAAA",
@@ -64,7 +59,7 @@ export const data = {
       title: "Argus Inspector",
       description:
         "A lightweight Chrome extension to inspect, measure, and edit any element on any page — without opening DevTools.",
-      projectUrl: "https://chromewebstore.google.com/detail/argus-inspector/amnfopnhghblhhmmmmdpkbkikmlebpkn",
+      projectUrl: "https://maskmanlucifer.github.io/argus/",
       status: "Live",
     },
     {
