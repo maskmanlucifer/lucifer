@@ -342,6 +342,27 @@ a {
         margin-top: 16px;
         border-radius: 8px;
       }
+
+      .evolution-anim {
+        height: 120px;
+        width: 100%;
+        margin-top: 16px;
+        border-radius: 8px;
+        background: linear-gradient(180deg, #f4f1ec 0%, #e9e4da 100%);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 0 8px 10px;
+
+        .evolution-figure {
+          fill: none;
+          stroke: #3a3530;
+          stroke-width: 1.4;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          animation: evolution-bob 1.8s ease-in-out infinite;
+        }
+      }
     }
   }
 
@@ -456,6 +477,47 @@ a {
   .section-title {
     font-size: 40px;
     margin-bottom: 8px;
+  }
+
+  .books-tabs {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    .books-tab-indicator {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      border-radius: 999px;
+      background-color: var(--text-color);
+      transition: left ease 300ms, width ease 300ms;
+      z-index: 0;
+    }
+
+    .books-tab {
+      position: relative;
+      z-index: 1;
+      padding: 6px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-color-secondary);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color ease 200ms, border-color ease 200ms;
+
+      &.active {
+        background-color: transparent;
+        color: var(--card-bg);
+        border-color: var(--text-color);
+      }
+
+      &:hover:not(.active) {
+        background-color: var(--card-bg-hover);
+      }
+    }
   }
 
   .books-list {
@@ -895,5 +957,15 @@ a {
 
   .list-links {
     color: var(--blue);
+  }
+}
+
+@keyframes evolution-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
   }
 }

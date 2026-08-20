@@ -49,6 +49,10 @@ const BOOKMARKS = [
     id: 12,
     url: "https://www.footer.design/",
   },
+  {
+    id: 13,
+    url: "https://viewport-ui.design/",
+  },
 ];
 
 const Bookmarks = () => {
