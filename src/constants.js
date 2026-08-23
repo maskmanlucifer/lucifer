@@ -53,7 +53,7 @@ export const data = {
         "A visual diary from my journey of learning to see — capturing light, textures, and quiet moments through my lens.",
       projectUrl: "https://unsplash.com/@maskmanlucifer",
       status: "Live",
-      animation: "evolution",
+      animation: "characters",
     },
     {
       title: "Argus Inspector",

@@ -363,6 +363,29 @@ a {
           animation: evolution-bob 1.8s ease-in-out infinite;
         }
       }
+
+      .characters-anim {
+        position: relative;
+        height: 88px;
+        width: 100%;
+        margin-top: 16px;
+        border-radius: 8px;
+        background-color: rgba(55, 60, 241, 0.08);
+        border: 1px solid rgba(55, 60, 241, 0.2);
+        background-color: color-mix(in srgb, var(--blue) 10%, var(--card-bg));
+        border: 1px solid color-mix(in srgb, var(--blue) 22%, transparent);
+
+        .character-figure {
+          position: absolute;
+          top: var(--char-top, 50%);
+          left: var(--char-left, 50%);
+          height: 26px;
+          width: 26px;
+          transform: translate(-50%, -50%) rotate(var(--char-rotate, 0deg));
+          animation: character-spin 2.6s ease-in-out infinite;
+          animation-delay: var(--char-delay, 0s);
+        }
+      }
     }
   }
 
@@ -967,5 +990,15 @@ a {
   }
   50% {
     transform: translateY(-4px);
+  }
+}
+
+@keyframes character-spin {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(calc(var(--char-rotate, 0deg) - 8deg)) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(calc(var(--char-rotate, 0deg) + 8deg)) scale(1.08);
   }
 }

@@ -1,4 +1,5 @@
 import Wave from "./wave";
+import { UNSPLASH_CHARACTERS } from "./unsplashCharacters";
 
 // simplified "march of progress" silhouettes: hunched ape-walk to upright human
 const EVOLUTION_FIGURES = [
@@ -58,6 +59,18 @@ const EVOLUTION_FIGURES = [
   },
 ];
 
+// two staggered rows of character icons within the animation box, kept
+// clear of the edges so nothing clips
+const CHARACTER_LAYOUT = [
+  { top: "30%", left: "10%", rotate: "-8deg" },
+  { top: "70%", left: "24%", rotate: "6deg" },
+  { top: "30%", left: "38%", rotate: "5deg" },
+  { top: "70%", left: "52%", rotate: "-6deg" },
+  { top: "30%", left: "66%", rotate: "-4deg" },
+  { top: "70%", left: "80%", rotate: "7deg" },
+  { top: "30%", left: "90%", rotate: "-6deg" },
+];
+
 const Projects = ({ projects }) => {
   if (!projects || projects.length === 0) return null;
 
@@ -96,6 +109,27 @@ const Projects = ({ projects }) => {
                       >
                         {figure.paths.map((d, j) => (
                           <path key={j} d={d} />
+                        ))}
+                      </svg>
+                    ))}
+                  </div>
+                )}
+                {animation === "characters" && (
+                  <div className="characters-anim">
+                    {UNSPLASH_CHARACTERS.slice(0, 7).map((character, i) => (
+                      <svg
+                        key={i}
+                        className="character-figure"
+                        viewBox={character.viewBox}
+                        style={{
+                          "--char-delay": `${i * 0.1}s`,
+                          "--char-top": CHARACTER_LAYOUT[i].top,
+                          "--char-left": CHARACTER_LAYOUT[i].left,
+                          "--char-rotate": CHARACTER_LAYOUT[i].rotate,
+                        }}
+                      >
+                        {character.paths.map((p, j) => (
+                          <path key={j} d={p.d} fill={p.fill} />
                         ))}
                       </svg>
                     ))}
